@@ -1,0 +1,105 @@
+
+C:\xampp\htdocs\webavensys\offertool_web>composer install
+Loading composer repositories with package information
+Installing dependencies (including require-dev) from lock file
+Your requirements could not be resolved to an installable set of packages.
+
+  Problem 1
+    - This package requires php ^7.3 but your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 2
+    - Installation request for doctrine/dbal 2.11.0 -> satisfiable by doctrine/dbal[2.11.0].
+    - doctrine/dbal 2.11.0 requires php ^7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 3
+    - Installation request for laravel/framework v8.6.0 -> satisfiable by laravel/framework[v8.6.0].
+    - laravel/framework v8.6.0 requires php ^7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 4
+    - Installation request for laravel/passport v10.0.1 -> satisfiable by laravel/passport[v10.0.1].
+    - laravel/passport v10.0.1 requires php ^7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 5
+    - Installation request for laravel/ui v3.0.0 -> satisfiable by laravel/ui[v3.0.0].
+    - laravel/ui v3.0.0 requires php ^7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 6
+    - Installation request for phpoffice/phpspreadsheet 1.23.0 -> satisfiable by phpoffice/phpspreadsheet[1.23.0].
+    - phpoffice/phpspreadsheet 1.23.0 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 7
+    - Installation request for spatie/laravel-medialibrary 8.7.2 -> satisfiable by spatie/laravel-medialibrary[8.7.2].
+    - spatie/laravel-medialibrary 8.7.2 requires php ^7.4 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 8
+    - Installation request for mockery/mockery 1.4.2 -> satisfiable by mockery/mockery[1.4.2].
+    - mockery/mockery 1.4.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 9
+    - Installation request for nunomaduro/collision v5.0.2 -> satisfiable by nunomaduro/collision[v5.0.2].
+    - nunomaduro/collision v5.0.2 requires php ^7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 10
+    - Installation request for phpunit/php-code-coverage 9.1.11 -> satisfiable by phpunit/php-code-coverage[9.1.11].
+    - phpunit/php-code-coverage 9.1.11 requires php >=7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 11
+    - Installation request for phpunit/php-file-iterator 3.0.4 -> satisfiable by phpunit/php-file-iterator[3.0.4].
+    - phpunit/php-file-iterator 3.0.4 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 12
+    - Installation request for phpunit/php-invoker 3.1.0 -> satisfiable by phpunit/php-invoker[3.1.0].
+    - phpunit/php-invoker 3.1.0 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 13
+    - Installation request for phpunit/php-text-template 2.0.2 -> satisfiable by phpunit/php-text-template[2.0.2].
+    - phpunit/php-text-template 2.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 14
+    - Installation request for phpunit/php-timer 5.0.1 -> satisfiable by phpunit/php-timer[5.0.1].
+    - phpunit/php-timer 5.0.1 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 15
+    - Installation request for phpunit/phpunit 9.3.11 -> satisfiable by phpunit/phpunit[9.3.11].
+    - phpunit/phpunit 9.3.11 requires php >=7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 16
+    - Installation request for sebastian/cli-parser 1.0.0 -> satisfiable by sebastian/cli-parser[1.0.0].
+    - sebastian/cli-parser 1.0.0 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 17
+    - Installation request for sebastian/code-unit 1.0.5 -> satisfiable by sebastian/code-unit[1.0.5].
+    - sebastian/code-unit 1.0.5 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 18
+    - Installation request for sebastian/code-unit-reverse-lookup 2.0.2 -> satisfiable by sebastian/code-unit-reverse-lookup[2.0.2].
+    - sebastian/code-unit-reverse-lookup 2.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 19
+    - Installation request for sebastian/comparator 4.0.3 -> satisfiable by sebastian/comparator[4.0.3].
+    - sebastian/comparator 4.0.3 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 20
+    - Installation request for sebastian/complexity 2.0.0 -> satisfiable by sebastian/complexity[2.0.0].
+    - sebastian/complexity 2.0.0 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 21
+    - Installation request for sebastian/diff 4.0.2 -> satisfiable by sebastian/diff[4.0.2].
+    - sebastian/diff 4.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 22
+    - Installation request for sebastian/environment 5.1.2 -> satisfiable by sebastian/environment[5.1.2].
+    - sebastian/environment 5.1.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 23
+    - Installation request for sebastian/exporter 4.0.2 -> satisfiable by sebastian/exporter[4.0.2].
+    - sebastian/exporter 4.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 24
+    - Installation request for sebastian/global-state 5.0.0 -> satisfiable by sebastian/global-state[5.0.0].
+    - sebastian/global-state 5.0.0 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 25
+    - Installation request for sebastian/lines-of-code 1.0.0 -> satisfiable by sebastian/lines-of-code[1.0.0].
+    - sebastian/lines-of-code 1.0.0 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 26
+    - Installation request for sebastian/object-enumerator 4.0.2 -> satisfiable by sebastian/object-enumerator[4.0.2].
+    - sebastian/object-enumerator 4.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 27
+    - Installation request for sebastian/object-reflector 2.0.2 -> satisfiable by sebastian/object-reflector[2.0.2].
+    - sebastian/object-reflector 2.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 28
+    - Installation request for sebastian/recursion-context 4.0.2 -> satisfiable by sebastian/recursion-context[4.0.2].
+    - sebastian/recursion-context 4.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 29
+    - Installation request for sebastian/resource-operations 3.0.2 -> satisfiable by sebastian/resource-operations[3.0.2].
+    - sebastian/resource-operations 3.0.2 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 30
+    - Installation request for sebastian/type 2.2.1 -> satisfiable by sebastian/type[2.2.1].
+    - sebastian/type 2.2.1 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 31
+    - Installation request for sebastian/version 3.0.1 -> satisfiable by sebastian/version[3.0.1].
+    - sebastian/version 3.0.1 requires php ^7.3 || ^8.0 -> your PHP version (7.2.11) does not satisfy that requirement.
+  Problem 32
+    - laravel/framework v8.6.0 requires php ^7.3 -> your PHP version (7.2.11) does not satisfy that requirement.
+    - facade/ignition 2.3.7 requires illuminate/support ^7.0|^8.0 -> satisfiable by laravel/framework[v8.6.0].
+    - Installation request for facade/ignition 2.3.7 -> satisfiable by facade/ignition[2.3.7].
+
+
+C:\xampp\htdocs\webavensys\offertool_web>
