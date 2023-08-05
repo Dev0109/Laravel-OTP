@@ -88,6 +88,16 @@ class User extends Authenticatable
         $this->notify(new ResetPassword($token));
     }
 
+    public function setSmsCodeAttribute($value)
+    {
+        $this->attributes['sms_code'] = $value;
+    }
+
+    public function setPhoneTimeAttribute($value)
+    {
+        $this->attributes['phone_time'] = $value;
+    }
+
     public function roles()
     {
         return $this->belongsToMany(Role::class);

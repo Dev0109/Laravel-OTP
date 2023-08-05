@@ -27,19 +27,29 @@
         </div>
     </div>
 </div>
+
+
+<span id="redirect" style="display: none">
+@if($redirect === "login")
+/home
+@else
+/login
+@endif
+</span>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     const inputElement = document.getElementById('otp_code');
 
     inputElement.addEventListener('input', function(event) {
         const inputValue = event.target.value;
-        
+
         // Remove any non-digit characters
         const numericValue = inputValue.replace(/\D/g, '');
-        
+
         // Limit the input to a maximum of 6 digits
         const limitedValue = numericValue.slice(0, 6);
-        
+
         // Update the input value with the restricted value
         event.target.value = limitedValue;
     });
@@ -96,13 +106,13 @@
             },
             success: (res) => {
                 res = JSON.parse(res);
-                if (res.success !== true) {
+                if (res !== true) {
                     $('#verify_btn')[0].innerHTML = '';
                     $('#verify_btn')[0].innerText = `Resend Code`;
                     $('#otp_code').attr('disabled', true);
                     timeout = true;
                 } else {
-                    window.location.href = "/home";
+                    window.location.href = document.getElementById("redirect").innerText;
                 }
             },
             error: (xhr, status, error) => {

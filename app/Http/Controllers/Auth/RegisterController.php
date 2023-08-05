@@ -3,13 +3,19 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\PCInfo;
 use App\Providers\RouteServiceProvider;
 use App\User;
+use Illuminate\Auth\Events\Registered;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 class RegisterController extends Controller
 {
@@ -72,12 +78,39 @@ class RegisterController extends Controller
             'name'     => $data['name'],
             'email'    => $data['email'],
             'phone'    => $data['phone'],
+            'pc_info' => 'required|string',
             'password' => Hash::make($data['password']),
         ]);
     }
+    // protected function registered(Request $request, $user)
+    // {
+    //     Auth::logout();
+    //     return redirect('/login');
+    // }
+
+    public function register(Request $request)
+    {
+        $this->validator($request->all())->validate();
+
+        event(new Registered($user = $this->create($request->all())));
+
+        if ($response = $this->registered($request, $user)) {
+            return $response;
+        }
+    }
+
     protected function registered(Request $request, $user)
     {
-        Auth::logout();
-        return redirect('/login');
+        $pc_info = $request->input('pc_info');
+        $newPC = new PCInfo();
+        $newPC->uid = $user->id;
+        $newPC->info = $pc_info;
+        $newPC->is_verified = 0;
+        $newPC->save();
+        Session::put('phone', $user->phone);
+        Session::put('redirect', "register");
+        Session::put('email', $user->email);
+        Session::put('pc_info', $pc_info);
+        return redirect()->route('otp.verify');
     }
 }
